@@ -49,6 +49,7 @@ class Importer(csvreader.Importer, investments.Importer):
             'Funds Received':               'transfer',
             'Stock Split':                  'transfer',
             'Cash In Lieu':                 'transfer',  # TODO: not handled correctly
+            'Qualified Dividend'            'dividends',
             }
 
     def skip_transaction(self, ot):
